@@ -1,0 +1,138 @@
+ @font-face {
+     font-family: 'sansserif-100';
+     src: url('./MuseoSans-100.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'sanserif-bold';
+     src: url('./MuseoSans-500.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+
+  body {
+      font-family: 'sansserif-100', sans-serif;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
+      color:#777;
+    font-weight: 200;
+      
+  }
+  b{
+    color:black;
+    font-weight: 200;
+  }
+/* Make all titles bold */
+h1
+{
+    font-family: 'sanserif-bold';
+color: #4a4a4a;
+}
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: bold;
+}
+
+.date_published{
+    font-family: 'sansserif-100';
+        color: #a0a0a0;
+    font-size: 13px;
+}
+ #container img {
+    max-width: calc(100vw - 40px);
+        /* Subtract the double margin value from the viewport width */
+        /* max-height: calc(100vh - 40px); */
+        /* Subtract the double margin value from the viewport height */
+        display: block;
+        margin: auto;
+
+ }
+ #container video{
+    max-width: calc(100vw - 40px);
+        /* Subtract the double margin value from the viewport width */
+        /* max-height: calc(100vh - 40px); */
+        /* Subtract the double margin value from the viewport height */
+        display: block;
+        margin: auto;
+ }
+
+ #main{
+    line-height: 1.7;
+ }
+ .quote{
+    font-family: 'sansserif-100';
+    color: #a0a0a0;
+ }
+ .strong{
+    font-family: 'sanserif-bold';
+    color: #555;
+ }
+ .giant{
+    font-family: 'sanserif-bold';
+        color: #555;
+    font-size: 50px;
+ }
+  footer {
+      min-height: 35px;
+  }
+  header>a{
+    
+        text-decoration-line: underline;
+        cursor: pointer;
+        margin-bottom: 25px;
+  }
+/* CSS for desktop */
+@media (min-width: 760px) {
+   
+
+   
+
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 740px;
+        max-width: 740px;
+
+        height: 100vh;
+        /* padding-bottom:100px; */
+        /* overflow-y: scroll; */
+    }
+    #container img{
+        max-width: 740px;
+        
+    }
+    .caption, .didascalia{
+        font-size: 10px;
+
+    }
+     
+    .content {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 50%;
+        height: 80%;
+        transform-origin: top center;
+        transition: transform 0.5s ease-out;
+        overflow-y: scroll;
+    }
+
+
+    .content.miniaturized {
+        transform: scale(0.5);
+    }
+       
+}
+
+
+
+
+
+
